@@ -1,4 +1,4 @@
-# 📚 Sistema de Gerenciamento de Biblioteca
+# Sistema de Gerenciamento de Biblioteca.
 
 ## Integrantes
 
@@ -81,7 +81,7 @@ O armazenamento das informações é realizado no PostgreSQL. Durante a primeira
 
 ## Como Executar
 
-Para executar o sistema, é necessário possuir o **Python 3**, o **PostgreSQL** e a biblioteca **psycopg2** instalados no computador. Após configurar o PostgreSQL, informe os dados de conexão na classe `BancoDeDados`, localizada no arquivo `bib.py`, preenchendo corretamente o host, o banco de dados, o usuário, a senha e a porta. Caso a biblioteca `psycopg2` ainda não esteja instalada, execute o comando abaixo no terminal:
+Para executar o sistema, é necessário possuir o **Python**, o **PostgreSQL** e a biblioteca **psycopg2** instalados no computador. Após configurar o PostgreSQL, informe os dados de conexão na classe `BancoDeDados`, localizada no arquivo `bib.py`, preenchendo corretamente o host, o banco de dados, o usuário, a senha e a porta. Caso a biblioteca `psycopg2` ainda não esteja instalada, execute o comando abaixo no terminal:
 
 ```bash
 pip install psycopg2
@@ -97,4 +97,4 @@ Na primeira execução, o sistema criará automaticamente as tabelas necessária
 
 ## Observações
 
-Este projeto foi desenvolvido para a disciplina de Engenharia de Software, utilizando Programação Orientada a Objetos e PostgreSQL, conforme os requisitos propostos pelo professor.
+Este projeto foi desenvolvido para a disciplina de Engenharia de Software, utilizando Programação Orientada a Objetos e PostgreSQL.
