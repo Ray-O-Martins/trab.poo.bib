@@ -56,7 +56,7 @@ biblioteca/
 
 ## Banco de Dados
 
-O sistema utiliza PostgreSQL para armazenar as informações.
+O armazenamento das informações é realizado no PostgreSQL. Durante a primeira execução, o sistema cria automaticamente as tabelas necessárias caso elas ainda não existam. Atualmente são utilizadas as tabelas `tabela_itens`, responsável pelos livros e revistas cadastrados, e `tabela_emprestimos`, destinada ao registro dos empréstimos realizados.
 
 ### Tabelas
 
@@ -81,41 +81,19 @@ O sistema utiliza PostgreSQL para armazenar as informações.
 
 ## Como Executar
 
-### Pré-requisitos
-
-- Python 3 instalado.
-- PostgreSQL instalado.
-- Biblioteca `psycopg2` instalada.
-
-### Instalação
-
-Instale a dependência:
+Para executar o sistema, é necessário possuir o **Python 3**, o **PostgreSQL** e a biblioteca **psycopg2** instalados no computador. Após configurar o PostgreSQL, informe os dados de conexão na classe `BancoDeDados`, localizada no arquivo `bib.py`, preenchendo corretamente o host, o banco de dados, o usuário, a senha e a porta. Caso a biblioteca `psycopg2` ainda não esteja instalada, execute o comando abaixo no terminal:
 
 ```bash
 pip install psycopg2
 ```
 
-### Configuração
-
-No arquivo `bib.py`, configure os dados de conexão com o PostgreSQL:
-
-- Host
-- Database
-- User
-- Password
-- Port
-
-### Execução
-
-Execute o comando abaixo no terminal:
+Em seguida, execute o sistema utilizando o comando:
 
 ```bash
 python bib.py
 ```
 
-Ao iniciar o sistema, as tabelas serão criadas automaticamente caso ainda não existam no banco de dados.
-
----
+Na primeira execução, o sistema criará automaticamente as tabelas necessárias no banco de dados e estará pronto para utilização.
 
 ## Observações
 
