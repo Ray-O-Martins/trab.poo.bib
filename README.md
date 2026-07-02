@@ -2,25 +2,21 @@
 
 ## Integrantes
 
-- Nome do Integrante 1
-- Nome do Integrante 2
-- Nome do Integrante 3
+- Guilherme
+- Jo
+- Rayssa Oliveira Martins das Chagas
 
 ---
 
 ## Descrição do Sistema
 
-O Sistema de Gerenciamento de Biblioteca foi desenvolvido em Python utilizando Programação Orientada a Objetos (POO) e PostgreSQL.
-
-O sistema permite o cadastro e gerenciamento de livros e revistas, controle de empréstimos, armazenamento das informações em banco de dados relacional e aplicação de regras de negócio para garantir a integridade dos dados.
+O Sistema de Gerenciamento de Biblioteca foi desenvolvido utilizando a linguagem Python e o banco de dados PostgreSQL, aplicando os principais conceitos de Programação Orientada a Objetos estudados na disciplina. O sistema permite o gerenciamento de livros e revistas, realizando o cadastro dos itens, o controle de empréstimos e o armazenamento das informações em um banco de dados relacional. Além disso, foram implementadas regras de negócio que garantem a integridade dos dados, impedindo, por exemplo, que um item indisponível seja emprestado novamente.
 
 ---
 
 ## Tecnologias Utilizadas
 
-- Python 3
-- PostgreSQL
-- Biblioteca psycopg2
+O projeto foi desenvolvido utilizando a linguagem Python como principal tecnologia para implementação da lógica do sistema. Para a persistência dos dados foi utilizado o PostgreSQL, sendo a conexão realizada por meio da biblioteca 'psycopg2', responsável pela comunicação entre a aplicação e o banco de dados.
 
 ---
 
@@ -28,12 +24,7 @@ O sistema permite o cadastro e gerenciamento de livros e revistas, controle de e
 
 O sistema aplica os seguintes conceitos de POO:
 
-- Classes e Objetos
-- Encapsulamento
-- Herança
-- Polimorfismo
-- Classe Abstrata
-- Tratamento de Exceções
+Durante o desenvolvimento do sistema foram aplicados diversos conceitos da Programação Orientada a Objetos. A classe abstrata 'ItemBiblioteca' foi utilizada para definir características comuns entre os itens da biblioteca. As classes Livro e Revista implementam herança ao estender essa classe abstrata, além de demonstrarem polimorfismo por meio da implementação do método 'descrever()'. O encapsulamento foi empregado utilizando o atributo '_disponivel', responsável por controlar a disponibilidade dos itens. Também foi criado um tratamento de exceções personalizado através da classe 'BibliotecaException', garantindo maior segurança durante a execução das operações.
 
 ---
 
